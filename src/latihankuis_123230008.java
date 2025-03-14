@@ -123,3 +123,5 @@ public class latihankuis_123230008 {
         frame.setVisible(true);
     }
 }
+
+//ssss
