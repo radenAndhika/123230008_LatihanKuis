@@ -4,11 +4,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class latihankuis_123230008 {
-    private static final String USERNAME_TETAP = "123230008";
+   private static final String USERNAME_TETAP = "123230008";
     private static final String PASSWORD_TETAP = "ifkelasg";
     
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(latihankuis_123230008::buatLoginGUI);
+       SwingUtilities.invokeLater(latihankuis_123230008::buatLoginGUI);
     }
     
     private static void buatLoginGUI() {
@@ -23,7 +23,7 @@ public class latihankuis_123230008 {
         JPasswordField fieldPassword = new JPasswordField();
         JButton tombolLogin = new JButton("Login");
         
-        frame.add(labelUsername);
+       frame.add(labelUsername);
         frame.add(fieldUsername);
         frame.add(labelPassword);
         frame.add(fieldPassword);
@@ -31,7 +31,7 @@ public class latihankuis_123230008 {
         frame.add(tombolLogin);
         
         tombolLogin.addActionListener(e -> {
-            String username = fieldUsername.getText();
+           String username = fieldUsername.getText();
             String password = new String(fieldPassword.getPassword());
             
             if (username.equals(USERNAME_TETAP) && password.equals(PASSWORD_TETAP)) {
@@ -113,15 +113,15 @@ public class latihankuis_123230008 {
         });
         
         tombolLogout.addActionListener(e -> {
-            int konfirmasi = JOptionPane.showConfirmDialog(frame, "Apakah Anda yakin ingin logout?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
-            if (konfirmasi == JOptionPane.YES_OPTION) {
-                frame.dispose();
-                buatLoginGUI();
-            }
-        });
+           int konfirmasi = JOptionPane.showConfirmDialog(frame, "Apakah Anda yakin ingin logout?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+           if (konfirmasi == JOptionPane.YES_OPTION) {
+               frame.dispose();
+               buatLoginGUI();
+           }
+       });
         
-        frame.setVisible(true);
-    }
+       frame.setVisible(true);
+   }
 }
 
 //ssss
